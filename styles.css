@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+html {
+    background-color: #edede9;
+    text-align: center;
+    font-family: "Comfortaa", "Open Sans", sans-serif;
+}
+
+h1 {
+    color: #6d645e;
+    margin-top: 50px;
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.wrapper {
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+  
+.typing {
+    width: fit-content;
+    color: #7e727c;
+    animation: typing 2s steps(35), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    word-break: break-all;
+}
+  
+typing::before {
+    content:" ";
+    display:inline-block;
+}
+
+typing::after {
+    width: 100%;
+    display:inline-flex;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+      }
+    90%,100% {width:100%};
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+h1:hover {
+    color: salmon;
+    opacity: 1;
+}
+
+table {
+    border-collapse: collapse; 
+}
+
+th {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #706862;
+}
+
+strong {
+    text-decoration: none;
+    border-bottom: 2px dashed #8f8279;
+    padding-bottom: 3px;
+}
+
+td {
+    padding: 10px 30px;
+    color: #7e727c;
+    font-weight: 600;
+}
+
+.tag {
+    color:rgb(219, 136, 68);
+    font-weight: bolder;
+    opacity: 1;
+    animation: 0.5s;
+}
+
+.tag:hover {
+    color:mediumslateblue;
+    opacity: 0.8;
+}
